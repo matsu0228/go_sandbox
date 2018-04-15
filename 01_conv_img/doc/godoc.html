@@ -1,0 +1,251 @@
+use 'godoc cmd/github.com/matsu0228/go_sandbox/01_conv_img/cmd' for documentation on the github.com/matsu0228/go_sandbox/01_conv_img/cmd command 
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script type='text/javascript'>
+	document.ANALYSIS_DATA = ;
+	document.CALLGRAPH = ;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/matsu0228/go_sandbox/01_conv_img/cmd"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+cmd は、画像変換などのコマンド集
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="#ConvImages">func ConvImages()</a></dd>
+			
+				
+				<dd><a href="#init">func init()</a></dd>
+			
+			
+				
+				<dd><a href="#TargetImages">type TargetImages</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TargetImages.convertToDestExt">func (t TargetImages) convertToDestExt(quality int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TargetImages.searchChildPaths">func (t TargetImages) searchChildPaths(target_dir string) (TargetImages, error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/github.com/matsu0228/go_sandbox/01_conv_img/cmd/conv_img.go">conv_img.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		<div id="pkg-callgraph" class="toggle" style="display: none">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Internal Call Graph section">Internal call graph ▹</h2>
+		</div> <!-- .expanded -->
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Internal Call Graph section">Internal call graph ▾</h2>
+			<p>
+			  In the call graph viewer below, each node
+			  is a function belonging to this package
+			  and its children are the functions it
+			  calls&mdash;perhaps dynamically.
+			</p>
+			<p>
+			  The root nodes are the entry points of the
+			  package: functions that may be called from
+			  outside the package.
+			  There may be non-exported or anonymous
+			  functions among them if they are called
+			  dynamically from another package.
+			</p>
+			<p>
+			  Click a node to visit that function's source code.
+			  From there you can visit its callers by
+			  clicking its declaring <code>func</code>
+			  token.
+			</p>
+			<p>
+			  Functions may be omitted if they were
+			  determined to be unreachable in the
+			  particular programs or tests that were
+			  analyzed.
+			</p>
+			<!-- Zero means show all package entry points. -->
+			<ul style="margin-left: 0.5in" id="callgraph-0" class="treeview"></ul>
+		</div>
+		</div> <!-- #pkg-callgraph -->
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+変換ルール (変換元の画像形式:変換後の画像形式)
+</p>
+
+				<pre>var <span id="convCommand">convCommand</span> <a href="/pkg/builtin/#string">string</a></pre>
+			
+				<p>
+Example:
+convImgDef = map[string]string
+</p>
+<pre>&#34;srcDir&#34;:  trgDir,
+&#34;srcExt&#34;:  cmd[0],
+&#34;destExt&#34;: cmd[1],
+</pre>
+<p>
+}
+</p>
+
+				<pre>var <span id="convImgDef">convImgDef</span> map[<a href="/pkg/builtin/#string">string</a>]<a href="/pkg/builtin/#string">string</a></pre>
+			
+				<p>
+処理対象のディレクトリ
+</p>
+
+				<pre>var <span id="trgDir">trgDir</span> <a href="/pkg/builtin/#string">string</a></pre>
+			
+		
+		
+			
+			
+			<h2 id="ConvImages">func <a href="/src/target/conv_img.go?s=2575:2592#L96">ConvImages</a>
+				<a class="permalink" href="#ConvImages">&#xb6;</a>
+			</h2>
+			<pre>func ConvImages()</pre>
+			<p>
+ConvImages は、指定したディレクトリ配下の画像ファイルの形式を変換する
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="init">func <a href="/src/target/conv_img.go?s=555:566#L23">init</a>
+				<a class="permalink" href="#init">&#xb6;</a>
+			</h2>
+			<pre>func init()</pre>
+			
+			
+			
+
+		
+		
+			
+			
+			<h2 id="TargetImages">type <a href="/src/target/conv_img.go?s=527:553#L21">TargetImages</a>
+				<a class="permalink" href="#TargetImages">&#xb6;</a>
+			</h2>
+			<p>
+処理対象の画像パスの配列
+</p>
+
+			<pre>type TargetImages []<a href="/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TargetImages.convertToDestExt">func (TargetImages) <a href="/src/target/conv_img.go?s=1367:1418#L45">convertToDestExt</a>
+					<a class="permalink" href="#TargetImages.convertToDestExt">&#xb6;</a>
+				</h3>
+				<pre>func (t <a href="#TargetImages">TargetImages</a>) convertToDestExt(quality <a href="/pkg/builtin/#int">int</a>)</pre>
+				<p>
+convertToDestExt は、対象の画像を指定した形式に変換する
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TargetImages.searchChildPaths">func (TargetImages) <a href="/src/target/conv_img.go?s=930:1009#L30">searchChildPaths</a>
+					<a class="permalink" href="#TargetImages.searchChildPaths">&#xb6;</a>
+				</h3>
+				<pre>func (t <a href="#TargetImages">TargetImages</a>) searchChildPaths(target_dir <a href="/pkg/builtin/#string">string</a>) (<a href="#TargetImages">TargetImages</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+				<p>
+searchChildPaths は、指定したディレクトリ配下にある画像ファイル（処理対象の拡張子）のパス配列を取得する
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+

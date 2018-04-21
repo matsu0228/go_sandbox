@@ -1,5 +1,7 @@
 # conv_img
 
+[![CircleCI](https://circleci.com/gh/matsu0228/go_sandbox.svg?style=svg)](https://circleci.com/gh/matsu0228/go_sandbox)
+
 * sample command
   * 下記で、画像変換ができるコマンド
 ```

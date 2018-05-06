@@ -88,7 +88,7 @@ func (p *Client) Checking() error {
 	ctx, cancelAll := context.WithTimeout(context.Background(), time.Duration(p.timeout)*time.Second)
 	defer cancelAll()
 
-	size, err := p.CheckSourceURL(ctx)
+	size, err := p.CheckAllowRangeAccess(ctx)
 	if err != nil {
 		return err
 	}
@@ -98,11 +98,10 @@ func (p *Client) Checking() error {
 	return nil
 }
 
-// CheckSourceURL is checker of header(canAccept-Raneges) and fizesize
-func (p *Client) CheckSourceURL(ctx context.Context) (int64, error) {
+// CheckAllowRangeAccess check  header(can Accept-Raneges) and return fizesize
+func (p *Client) CheckAllowRangeAccess(ctx context.Context) (int64, error) {
 	res, err := ctxhttp.Head(ctx, http.DefaultClient, p.URLStr)
 	if err != nil {
-		// ch.Err <-
 		return 0, errors.Wrap(err, "failed to head request: "+p.URLStr)
 	}
 	if res.Header.Get("Accept-Ranges") != "bytes" {
@@ -248,6 +247,11 @@ func (p *Client) SingleDownload() error {
 // Filename return c.filename
 func (p *Client) Filename() string {
 	return p.filename
+}
+
+// IsParallelMode return c.isParallelMode
+func (p *Client) IsParallelMode() bool {
+	return p.isParallelMode
 }
 
 func (p *Client) makeRange(i uint) Range {

@@ -1,7 +1,14 @@
 package main
 
-import "github.com/matsu0228/go_sandbox/cobra-cli/cmd"
+import (
+	"log"
+
+	"github.com/matsu0228/go_sandbox/cobra-cli/cmd"
+)
 
 func main() {
-	cmd.Execute()
+	rootCmd := cmd.NewCmdRoot()
+	if err := rootCmd.Execute(); err != nil {
+		log.Fatal(err)
+	}
 }

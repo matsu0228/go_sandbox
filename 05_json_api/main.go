@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"./lib"
+	"github.com/matsu0228/go_sandbox/05_json_api/lib"
 )
 
 var verbos bool

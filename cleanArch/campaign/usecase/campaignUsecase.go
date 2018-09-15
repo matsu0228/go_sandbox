@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"github.com/matsu0228/go_exampels/cleanArch/campaign"
+	"github.com/matsu0228/go_sandbox/cleanArch/campaign"
 )
 
 // CampaignUsecase is struct

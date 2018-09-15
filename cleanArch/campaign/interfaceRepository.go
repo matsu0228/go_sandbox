@@ -1,7 +1,7 @@
 package campaign
 
 import (
-	entities "github.com/matsu0228/go_exampels/cleanArch/common/entities"
+	entities "github.com/matsu0228/go_sandbox/cleanArch/common/entities"
 )
 
 // Repositories is interface

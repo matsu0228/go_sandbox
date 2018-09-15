@@ -4,8 +4,8 @@ import (
 	"log"
 	"testing"
 
-	"github.com/matsu0228/go_exampels/cleanArch/campaign/usecase"
-	"github.com/matsu0228/go_exampels/cleanArch/common/entities"
+	"github.com/matsu0228/go_sandbox/cleanArch/campaign/usecase"
+	"github.com/matsu0228/go_sandbox/cleanArch/common/entities"
 )
 
 type MockRepos struct {

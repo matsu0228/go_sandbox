@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/matsu0228/go_exampels/cleanArch/campaign"
-	entities "github.com/matsu0228/go_exampels/cleanArch/common/entities"
+	"github.com/matsu0228/go_sandbox/cleanArch/campaign"
+	entities "github.com/matsu0228/go_sandbox/cleanArch/common/entities"
 )
 
 type mssqlCampaignRepositories struct {

@@ -7,9 +7,9 @@ import (
 
 	_ "github.com/denisenkom/go-mssqldb" //mssql接続のためのドライバ
 	"github.com/joho/godotenv"
-	cpRepos "github.com/matsu0228/go_exampels/cleanArch/campaign/repositories"
-	"github.com/matsu0228/go_exampels/cleanArch/campaign/usecase"
-	commonRepo "github.com/matsu0228/go_exampels/cleanArch/common/repositories"
+	cpRepos "github.com/matsu0228/go_sandbox/cleanArch/campaign/repositories"
+	"github.com/matsu0228/go_sandbox/cleanArch/campaign/usecase"
+	commonRepo "github.com/matsu0228/go_sandbox/cleanArch/common/repositories"
 )
 
 func envLoad() {

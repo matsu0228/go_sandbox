@@ -18,7 +18,7 @@ WORK_DIR=$(WORK_ROOT)/$(REPO_NAME)
 
 deps:
 		cd $(WORK_DIR)
-		dep ensure
+		dep ensure -v
 
 build: deps
 		$(WORK_DIR)/build/crosscompile_for_go.sh -o $(CMD_NAME)
